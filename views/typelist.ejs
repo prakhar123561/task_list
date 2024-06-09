@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <% if(view) { %>
+            <div id="day">
+                <h1><%= kindofday %></h1>
+            </div>
+            <div id="title">
+                <h2>Todo List</h2>
+            </div>
+
+        <div id="todotype-list">
+            <% data.map((item) => { %>
+                <div class="todotype">
+                    <h3><%= item.todotype %></h3>
+                    <p>Number of items: <%= item.item_count %></p>
+                </div>
+            <% }) %>
+        </div>
+
+        <% } %>
+    </body>
+</html>

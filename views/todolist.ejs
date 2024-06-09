@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/stylesheets/style.css">
+<html>
+<head>
+    <title>Todo</title>
+</head>    
+<body>
+
+    <div id="day"><h1><%= kindofday %></h1></div>
+    <div id="title"><h2>Todo List</h2></div>
+    
+        
+    <form action="/todo/todoadd" method="post">
+        <div class="type">
+       <input type="text" name="newitem" id="newitem" placeholder="New Item" autocomplete="off"> 
+       <input type="submit" value="+" ></div>
+    </form>
+
+</body>
+</html> 
+<script>
+</script>
+
+
